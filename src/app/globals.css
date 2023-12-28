@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+    .default-btn {
+        @apply p-2 rounded-md disabled:opacity-75;
+    }
+
+    .flex-center {
+        @apply flex items-center justify-center;
+    }
+
+}
+
+@layer components {
+
+    .default-btn {
+        @apply p-2 rounded-md disabled:opacity-75;
+    }
+
+    .flex-center {
+        @apply flex items-center justify-center;
+    }
+
+}
+
+:root {
+
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+
+    }
+}
+
+/* This will work on Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: darkgray #dddddd;
+}
+
+/* Target's on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #dddddd;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: darkgray;
+}
+
+body {
+
+}
+
+.menu-icon {
+    cursor: pointer;
+}
+
+.menu-icon > .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.menu-icon.toggle > .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+.menu-icon.toggle > .bar2 {
+    opacity: 0;
+}
+
+.menu-icon.toggle > .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
+.sts-container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1280px;
+}
