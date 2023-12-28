@@ -70,17 +70,18 @@ const Login = () => {
             >
                 {error && (<span className="w-full block mb-3 text-sm text-center text-red-500">{error}</span>)}
 
-                <label htmlFor="email" className="mb-2 block text-sm font-medium text-gray-700">
+                <label htmlFor="email-login" className="mb-2 block text-sm font-medium text-gray-700">
                     Email:
                 </label>
                 <input
-                    id="email"
+                    id="email-login"
                     type="email"
                     name="email"
                     placeholder="Please enter your email"
                     required
                     className="w-full px-4 py-2 mb-4 border border-gray-300 rounded-md"
-                    aria-label="email"
+                    aria-label="email-login"
+                    aria-required={true}
                 />
 
                 <label htmlFor="password" className="mb-2 block text-sm font-medium text-gray-700">
@@ -93,7 +94,8 @@ const Login = () => {
                     placeholder="Plase enter you password"
                     required
                     className="w-full px-2 py-2 mb-4 border border-gray-300 rounded-md"
-                    aria-label="email"
+                    aria-label="password"
+                    aria-required={true}
                 />
 
                 <button

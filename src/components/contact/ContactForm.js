@@ -31,6 +31,7 @@ const ContactForm = () => {
                     className="mt-1 p-2 w-full border rounded-md"
                     required
                     aria-label="name"
+                    aria-required={true}
                 />
             </div>
 
@@ -46,6 +47,7 @@ const ContactForm = () => {
                     className="mt-1 p-2 w-full border rounded-md"
                     required
                     aria-label="email"
+                    aria-required={true}
                 />
             </div>
 
@@ -61,6 +63,7 @@ const ContactForm = () => {
                     className="mt-1 p-2 w-full border rounded-md"
                     required
                     aria-label="message"
+                    aria-required={true}
                 />
             </div>
 
