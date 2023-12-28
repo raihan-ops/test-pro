@@ -1,7 +1,7 @@
 "use client";
 
 import Spinner from "@/components/common/Spinner";
-import {useState} from "react";
+import { useState } from "react";
 
 const ContactForm = () => {
 
@@ -15,10 +15,7 @@ const ContactForm = () => {
     };
 
     return (
-        <form
-            onSubmit={handleSubmit}
-            className="mt-8"
-        >
+        <form onSubmit={handleSubmit} className="mt-8">
             <div className="mb-4">
                 <label htmlFor="name" className="mb-2 block text-sm font-medium text-gray-700">
                     Full Name
@@ -30,7 +27,7 @@ const ContactForm = () => {
                     placeholder="Please enter your name"
                     className="mt-1 p-2 w-full border rounded-md"
                     required
-                    aria-label="name"
+                    aria-label="Full Name"
                     aria-required={true}
                 />
             </div>
@@ -46,7 +43,7 @@ const ContactForm = () => {
                     placeholder="Please enter your email"
                     className="mt-1 p-2 w-full border rounded-md"
                     required
-                    aria-label="email"
+                    aria-label="Email Address"
                     aria-required={true}
                 />
             </div>
@@ -62,7 +59,7 @@ const ContactForm = () => {
                     rows="4"
                     className="mt-1 p-2 w-full border rounded-md"
                     required
-                    aria-label="message"
+                    aria-label="Message"
                     aria-required={true}
                 />
             </div>
@@ -72,11 +69,12 @@ const ContactForm = () => {
                     type="submit"
                     className="default-btn flex-center w-full bg-emerald-700 text-white hover:bg-emerald-600"
                 >
-                    {loading && <Spinner/>}
+                    {loading && <Spinner />}
                     Submit
                 </button>
             </div>
         </form>
+
     );
 };
 
