@@ -41,6 +41,8 @@ const SideMenu = () => {
             <div
                 className="bg-white w-8 h-8 absolute top-4 -right-8 flex-center cursor-pointer"
                 onClick={toggleMenu}
+                role="button"
+                aria-label="toggle-button"
             >
                 <Image
                     className={`transition-all ${!toggle ? "rotate-180" : ""}`}

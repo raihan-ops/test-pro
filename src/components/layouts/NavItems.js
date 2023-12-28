@@ -38,6 +38,7 @@ const NavItems = ({toggleMenu}) => {
                             title={nav.title}
                             onClick={handleToggle}
                             className="inline-block w-full h-full p-2"
+                            role="button"
                         >
                             {nav.displayName}
                         </Link>
@@ -55,6 +56,7 @@ const NavItems = ({toggleMenu}) => {
                     title="Client portal link" target="_blank"
                     onClick={handleToggle}
                     className="inline-block w-full h-full p-2"
+                    role="button"
                 >
                     Client Portal
                 </Link>

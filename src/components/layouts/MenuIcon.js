@@ -7,6 +7,8 @@ const MenuIcon = ({toggleMenu, toggle = false}) => {
                     toggleMenu();
                 }
             }}
+            role="button"
+            aria-label="menu_icon"
         >
             <div className="bar1"/>
             <div className="bar2"/>

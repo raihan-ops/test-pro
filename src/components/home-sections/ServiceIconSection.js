@@ -39,6 +39,7 @@ const ServiceIconSection = () => {
                     href="#individual-tax"
                     onClick={handleScroll}
                     passHref
+                    role="button"
                 >
                     <div
                         className="m-2 flex-center flex-col cursor-pointer"
@@ -54,6 +55,7 @@ const ServiceIconSection = () => {
                     href="#business-tax"
                     onClick={handleScroll}
                     passHref
+                    role="button"
                 >
                     <div
                         className="m-2 flex-center flex-col cursor-pointer"
@@ -69,6 +71,7 @@ const ServiceIconSection = () => {
                     href="#book-keeping"
                     onClick={handleScroll}
                     passHref
+                    role="button"
                 >
                     <div
                         className="m-2 flex-center flex-col cursor-pointer"
@@ -84,6 +87,7 @@ const ServiceIconSection = () => {
                     href="#tax-plan"
                     onClick={handleScroll}
                     passHref
+                    role="button"
                 >
                     <div
                         className="m-2 flex-center flex-col cursor-pointer"
